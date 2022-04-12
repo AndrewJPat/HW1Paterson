@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>HW.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+HW.py</font>
+</center></td></tr></table>
+<pre><span class="s0">mph = </span><span class="s1">0.44704</span>
+<span class="s0">avg_wind_speed_wallowa = </span><span class="s1">23.98 </span><span class="s0">* mph</span>
+<span class="s0">avg_wind_speed_columbia = </span><span class="s1">8.25 </span><span class="s0">* mph</span>
+<span class="s0">blade_radius1 = </span><span class="s1">2</span>
+<span class="s0">blade_radius2 = </span><span class="s1">3</span>
+<span class="s0">high_efficiency = </span><span class="s1">0.98</span>
+<span class="s0">low_efficiency = </span><span class="s1">0.10</span>
+<span class="s0">print(avg_wind_speed_wallowa * blade_radius1)</span>
+<span class="s0">print(avg_wind_speed_wallowa * blade_radius1 * high_efficiency)</span>
+<span class="s0">print(avg_wind_speed_wallowa * blade_radius2)</span>
+<span class="s0">print(avg_wind_speed_wallowa * blade_radius2 * low_efficiency)</span>
+<span class="s0">print(avg_wind_speed_columbia * blade_radius1)</span>
+<span class="s0">print(avg_wind_speed_columbia * blade_radius1 * high_efficiency)</span>
+<span class="s0">print(avg_wind_speed_columbia * blade_radius2)</span>
+<span class="s0">print(avg_wind_speed_columbia * blade_radius2 * low_efficiency)</span>
+<span class="s0">joules_per_year = </span><span class="s1">2.57 </span><span class="s0">* </span><span class="s1">10 </span><span class="s0">** </span><span class="s1">10</span>
+<span class="s0">seconds_per_year = </span><span class="s1">31536000</span>
+<span class="s0">wtj_wallowa_high_eff = avg_wind_speed_wallowa * blade_radius1 * high_efficiency</span>
+<span class="s0">print(joules_per_year // wtj_wallowa_high_eff // seconds_per_year)</span>
+<span class="s0">wtj_wallowa_low_eff = avg_wind_speed_wallowa * blade_radius2 * low_efficiency</span>
+<span class="s0">print(joules_per_year // wtj_wallowa_low_eff // seconds_per_year)</span>
+<span class="s0">wtj_columbia_high_eff = avg_wind_speed_columbia * blade_radius1 * high_efficiency</span>
+<span class="s0">print(joules_per_year // wtj_columbia_high_eff // seconds_per_year)</span>
+<span class="s0">wtj_columbia_low_eff = avg_wind_speed_columbia * blade_radius2 * low_efficiency</span>
+<span class="s0">print(joules_per_year // wtj_columbia_low_eff // seconds_per_year)</span>
+<span class="s0">kg_coal_joules = </span><span class="s1">29307600</span>
+<span class="s0">print(joules_per_year // kg_coal_joules)</span>
+
+
+
+</pre>
+</body>
+</html>
